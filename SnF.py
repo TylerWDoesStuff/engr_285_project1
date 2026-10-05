@@ -7,6 +7,8 @@ import sys, glob, shutil, os #Libraries needed to read/write files/folders and o
 from pathlib import Path #Library to determine the file paths to images
 import imageio.v2 as io #Library for converting a collection of image files to a gif
 
+# Test to see if Github works as expected
+
 #Main parameters of the simulation
 breed_time = 2 #Number of steps before a fish is capable of duplicating
 energy_gain = 4 #Additional steps granted to a shark after eating a fish
