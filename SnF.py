@@ -9,10 +9,18 @@ import imageio.v2 as io #Library for converting a collection of image files to a
 
 # Test to see if Github works as expected
 
+# Modifications to do:
+# Add fish density (too many fish and they die) (do we want to add a too little and they die parameter?)
+
+
 #Main parameters of the simulation
 breed_time = 2 #Number of steps before a fish is capable of duplicating
 energy_gain = 4 #Additional steps granted to a shark after eating a fish
 breed_energy = 10 #Number of stored steps before a shark is capable of duplicating
+
+# Added parameters for better simulation
+overcrowding_threshold = 0.5 # How much of the surrounding area must be filled by fish to begin overcrowding effects
+# maybe "simplify" this by having # of fish before overcrowding?
 
 #Other simulation parameters
 dims = [150,200] #Size of the simulation window
